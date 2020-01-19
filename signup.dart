@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'chat.dart';
 import 'constants.dart';
-import 'custom_button.dart';
-import 'custom_textfield.dart';
+import 'customized_button.dart';
+import 'customized_textfield.dart';
 
 class SignUp extends StatelessWidget {
   static const String id = 'signup';
@@ -24,28 +24,29 @@ class SignUp extends StatelessWidget {
             horizontal: 15.0,
           ),
           child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                CustomTextField(
-                  text: 'Email',
-                ),
-                CustomTextField(
-                  text: 'Username',
-                ),
-                CustomTextField(
-                  text: 'Password',
-                  obscureText: true,
-                ),
-                CustomButton(
-                  color: kPrimaryColor,
-                  text: 'Sign up',
-                  onPressed: () {
-                    // handle log in
-                    Navigator.pushNamed(context, Chat.id);
-                  },
-                ),
-              ]),
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              CustomizedTextField(
+                text: 'Email',
+              ),
+              CustomizedTextField(
+                text: 'Username',
+              ),
+              CustomizedTextField(
+                text: 'Password',
+                obscureText: true,
+              ),
+              CustomizedButton(
+                color: kPrimaryColor,
+                text: 'Sign up',
+                onPressed: () {
+                  // TODO: handle sign-up
+                  Navigator.pushNamed(context, Chat.id);
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );

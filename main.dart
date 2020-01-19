@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: LogIn.id,
       routes: {
+        // setup the routes
         Chat.id: (context) => Chat(),
         LogIn.id: (context) => LogIn(),
         SignUp.id: (context) => SignUp(),

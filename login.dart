@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'chat.dart';
 import 'constants.dart';
-import 'custom_button.dart';
-import 'custom_textfield.dart';
+import 'customized_button.dart';
+import 'customized_textfield.dart';
 import 'signup.dart';
 
 class LogIn extends StatelessWidget {
@@ -30,18 +30,18 @@ class LogIn extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            CustomTextField(
+            CustomizedTextField(
               text: 'Username',
             ),
-            CustomTextField(
+            CustomizedTextField(
               text: 'Password',
               obscureText: true,
             ),
-            CustomButton(
+            CustomizedButton(
               color: kPrimaryColor,
               text: 'Log in',
               onPressed: () {
-                // handle log in
+                // TODO: handle log in
                 Navigator.pushNamed(context, Chat.id);
               },
             ),
@@ -51,7 +51,6 @@ class LogIn extends StatelessWidget {
                 Text('Don\'t have an account ? '),
                 FlatButton(
                   onPressed: () {
-                    // handle sign up
                     Navigator.pushNamed(context, SignUp.id);
                   },
                   child: Text('Sign up'),

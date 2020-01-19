@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CustomTextField extends StatelessWidget {
-  CustomTextField({@required this.text, this.obscureText = false});
+class CustomizedTextField extends StatelessWidget {
+  CustomizedTextField({@required this.text, this.obscureText = false});
 
   final String text;
+  //obscure text for password fields
   final bool obscureText;
 
   @override

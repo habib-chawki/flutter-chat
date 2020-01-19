@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomButton extends StatelessWidget {
-  CustomButton(
+class CustomizedButton extends StatelessWidget {
+  CustomizedButton(
       {@required this.color, @required this.text, @required this.onPressed});
 
   final Color color;
